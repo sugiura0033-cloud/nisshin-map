@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174a78">
+  <title>日進市 くらしの距離マップ</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><div class="brand"><span class="brand-mark" aria-hidden="true">地図</span><div><p class="brand-kicker">NISSHIN CITY / FACILITY MAP</p><h1>日進市 くらしの距離マップ</h1></div></div><span class="unofficial"></span></div></header>
+  <div class="breadcrumb"><div class="container">ホーム <span aria-hidden="true">›</span> くらしの距離マップ</div></div>
+  <main class="container">
+    <div class="page-heading"><p class="section-kicker">FACILITY INFORMATION</p><h2>くらしの距離マップ</h2></div>
+    <div class="layout">
+      <aside class="panel controls" aria-label="表示施設の選択">
+        <h3><span class="heading-rule"></span>表示する施設</h3>
+        <p class="help-text"></p>
+        <div id="facilityControls" class="facility-controls" role="group" aria-label="施設の種類">
+          <label class="facility-option" data-kind="shelters"><input type="checkbox" data-kind="shelters" checked><span class="symbol shelter">避</span><span class="option-label">避難所</span><span class="option-status" data-status="shelters">確認中</span></label>
+          <label class="facility-option" data-kind="fire"><input type="checkbox" data-kind="fire"><span class="symbol fire">消</span><span class="option-label">消防署</span><span class="option-status" data-status="fire"></span></label>
+          <label class="facility-option" data-kind="police"><input type="checkbox" data-kind="police"><span class="symbol police">交</span><span class="option-label">交番</span><span class="option-status" data-status="police"></span></label>
+          <label class="facility-option" data-kind="medical"><input type="checkbox" data-kind="medical"><span class="symbol medical">医</span><span class="option-label">病院・医療機関</span><span class="option-status" data-status="medical"></span></label>
+          <label class="facility-option" data-kind="schools"><input type="checkbox" data-kind="schools"><span class="symbol school">学</span><span class="option-label">小学校</span><span class="option-status" data-status="schools"></span></label>
+          
+        </div>
+        <div class="panel-section"><h3><span class="heading-rule"></span>地図の見方</h3><div class="distance-key"><span class="distance-line strong"></span><span>250m（濃い色・実線）</span></div><div class="distance-key"><span class="distance-line faint"></span><span>500m（薄い色・破線）</span></div><p class="help-text">色は施設の種類に対応。250mと500mはQGISで計算した道路沿いの到達範囲。</p></div>
+        <div class="panel-section actions"><button id="selectAll" class="secondary-button" type="button">すべて選択</button><button id="clearAll" class="secondary-button" type="button">すべて解除</button><button id="zoomToData" class="secondary-button primary-action" type="button">表示中の施設に移動</button></div>
+      </aside>
+      <section class="map-area" aria-label="地図表示エリア"><div class="map-toolbar"><div><strong></strong><span class="map-subtitle" id="facilityCount">表示データを読み込み中…</span></div><span class="map-region">愛知県 日進市</span></div><div id="map" role="application" aria-label="日進市の施設地図"></div><div class="map-footer"><div class="legend" id="legend"><span class="legend-label">表示中：</span><span id="legendItems">読み込み中</span></div><span class="map-note">地図：国土地理院</span></div><p id="status" class="status" aria-live="polite">読み込み中…</p></section>
+    </div>
+    <aside class="panel mobile-map-guide">
+  <h3><span class="heading-rule"></span>地図の見方</h3>
+
+  <div class="distance-key">
+    <span class="distance-line strong"></span>
+    <span>250m（濃い色・実線）</span>
+  </div>
+
+  <div class="distance-key">
+    <span class="distance-line faint"></span>
+    <span>500m（薄い色・破線）</span>
+  </div>
+
+  <p class="help-text">
+    色は施設の種類に対応。
+    250mと500mはQGISで計算した道路沿いの到達範囲。
+  </p>
+</aside>
+    <section class="notice"><p class="official-links">参考：<a href="https://www.city.nisshin.lg.jp/department/soumu/bousai/5/2/2/map/5190.html" target="_blank" rel="noopener noreferrer">日進市 防災関連地図</a><a href="https://www.sonicweb-asp.jp/nisshin" target="_blank" rel="noopener noreferrer">にっしんまっぷ</a></p></section>
+    
+  </main>
+  <footer class="site-footer"><div class="container">日進市 くらしの距離マップ</div></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="app.js"></script>
+</body></html>

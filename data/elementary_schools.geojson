@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "elementary_schools",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{"type":"Feature","properties":{"名称":"日進市立西小学校","住所":"日進市浅田町東田面76","学校コード":"B123210008087","本分校":1},"geometry":{"type":"Point","coordinates":[137.028745,35.128806]}},
+{"type":"Feature","properties":{"名称":"日進市立東小学校","住所":"日進市米野木町北畑8-3","学校コード":"B123210008096","本分校":1},"geometry":{"type":"Point","coordinates":[137.063853,35.137614]}},
+{"type":"Feature","properties":{"名称":"日進市立北小学校","住所":"日進市岩崎町芝内2-1","学校コード":"B123210008103","本分校":1},"geometry":{"type":"Point","coordinates":[137.048378,35.149795]}},
+{"type":"Feature","properties":{"名称":"日進市立北小学校青葉分校","住所":"日進市岩崎町竹ノ山149-164","学校コード":"B123210008112","本分校":2},"geometry":{"type":"Point","coordinates":[137.039718,35.154757]}},
+{"type":"Feature","properties":{"名称":"日進市立南小学校","住所":"日進市折戸町中屋敷70-3","学校コード":"B123210008121","本分校":1},"geometry":{"type":"Point","coordinates":[137.044703,35.124134]}},
+{"type":"Feature","properties":{"名称":"日進市立相野山小学校","住所":"日進市北新町相野山1331-3","学校コード":"B123210008130","本分校":1},"geometry":{"type":"Point","coordinates":[137.058918,35.152792]}},
+{"type":"Feature","properties":{"名称":"日進市立香久山小学校","住所":"日進市香久山五丁目1701","学校コード":"B123210008149","本分校":1},"geometry":{"type":"Point","coordinates":[137.028896,35.14232]}},
+{"type":"Feature","properties":{"名称":"日進市立梨の木小学校","住所":"日進市折戸町梨子ノ木28-31","学校コード":"B123210008158","本分校":1},"geometry":{"type":"Point","coordinates":[137.056776,35.120414]}},
+{"type":"Feature","properties":{"名称":"日進市立赤池小学校","住所":"日進市赤池三丁目2101","学校コード":"B123210008167","本分校":1},"geometry":{"type":"Point","coordinates":[137.016059,35.11888]}},
+{"type":"Feature","properties":{"名称":"日進市立竹の山小学校","住所":"日進市竹の山四丁目502","学校コード":"B123210008176","本分校":1},"geometry":{"type":"Point","coordinates":[137.033474,35.152795]}}
+]
+}

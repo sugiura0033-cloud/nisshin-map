@@ -1,0 +1,2 @@
+避難所.geojson、reach_250m.geojson、reach_500m.geojsonをコピーしてください。
+その他の施設のGeoJSONはQGISから追加していきます。
